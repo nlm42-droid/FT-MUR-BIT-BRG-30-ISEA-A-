@@ -4,7 +4,6 @@
 
 The objective of this lab was to install and configure Ubuntu Linux in a virtual machine environment and become familiar with both the Ubuntu graphical desktop environment and command-line interface. The lab also introduced basic networking, file management, system information, user management, and software installation techniques.
 
-
 # Part 1a-1 Virtualisation and Linux Setup
 
 ## Deliverable 1 - Virtualisation Software Installed
@@ -13,13 +12,11 @@ VMware Workstation was installed and configured to host Ubuntu Linux in a virtua
 
 ![VMware Installed](vmware-installed.png)
 
-
 ## Deliverable 2 - Ubuntu ISO Downloaded
 
 The Ubuntu ISO image was downloaded from the official Ubuntu website and used as installation media.
 
 ![Ubuntu ISO](ubuntu-iso.png)
-
 
 ## Deliverable 3 - New Virtual Machine Created
 
@@ -27,13 +24,11 @@ A new Ubuntu virtual machine was created with at least 2048 MB RAM and the ISO i
 
 ![VM Settings](vm-settings.png)
 
-
 ## Deliverable 4 - Ubuntu Installation Completed
 
 Ubuntu Linux was successfully installed and rebooted inside the virtual machine.
 
 ![Ubuntu Desktop](ubuntu-desktop.png)
-
 
 ## Deliverable 5 - Networking Mode Configured
 
@@ -41,14 +36,11 @@ NAT networking was configured to provide internet access from the virtual machin
 
 ![Network Settings](network-settings.png)
 
-
 ## Deliverable 6 - Ubuntu Running Successfully
 
 Ubuntu was verified to be fully operational through the graphical desktop and terminal interface.
 
 ![Ubuntu Running](ubuntu-running.png)
-
-
 
 # Part 1a-2 Ubuntu Desktop and Command Line Familiarisation
 
@@ -61,7 +53,6 @@ Ubuntu desktop applications including Firefox, LibreOffice, File Manager and Ubu
 ![LibreOffice](libreoffice.png)
 
 ![File Manager](file-manager.png)
-
 
 ## Terminal Commands
 
@@ -76,7 +67,6 @@ ls -alt
 ```
 
 ![Terminal Commands](terminal-commands.png)
-
 
 ## File Operations
 
@@ -93,7 +83,6 @@ ls -lah
 
 ![File Operations](file-operations.png)
 
-
 ## System Information
 
 System information was obtained using:
@@ -107,6 +96,7 @@ less /proc/cpuinfo
 
 ![System Information](system-information.png)
 
+![Cpu Info](cpu-info.png)
 
 ## User Privilege Experiment
 
@@ -121,7 +111,6 @@ The purpose of sudo and the role of the root user were investigated.
 
 ![User Privileges](user-privileges.png)
 
-
 ## Networking Tests
 
 Network connectivity was tested using:
@@ -133,7 +122,6 @@ ping 8.8.8.8
 
 ![Networking](networking.png)
 
-
 ## DNS and Hosts File
 
 The /etc/hosts file was edited and DNS lookups were performed using:
@@ -144,7 +132,6 @@ whois google.com
 ```
 
 ![DNS Lookup](dns-lookup.png)
-
 
 ## Hardware Information
 
@@ -158,16 +145,21 @@ less /proc/cpuinfo
 
 ![Hardware Information](hardware-info.png)
 
-
 ## Software Installation
 
 Software installation methods explored included:
 
 * Ubuntu Software Centre
+
+![Ubuntu Software Centre](software-centre.png)
+
 * APT Package Manager
-* Binary package installation (.deb)
+
+![APT Package Manager](apt-install.png)
+
 * Software as a Service (SaaS)
 
+![SaaS](saas.png)
 
 ## Source Code Compilation
 
@@ -180,9 +172,6 @@ gcc hello_world.c -o hello_world_executable
 
 ![Compilation](compilation.png)
 
-
 ## Summary
 
-This lab provided practical experience with virtualization, Linux installation,
-Ubuntu desktop navigation, command-line operation, networking, software installation, 
-user management and basic software compilation.
+This lab provided practical experience with virtualization, Linux installation, Ubuntu desktop navigation, command-line operation, networking, software installation, user management and basic software compilation.
