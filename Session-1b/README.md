@@ -75,7 +75,7 @@ Files were transferred securely using SCP.
 
 The hosts file was edited and a custom hostname was tested.
 
-![Hosts File](screenshots/1b-hosts-file.png)
+![Hosts File](screenshots/1b-host-file.png)
 
 
 ## Deliverable 11 - DNS Lookup and Whois
