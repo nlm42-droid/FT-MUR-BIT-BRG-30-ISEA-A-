@@ -10,37 +10,37 @@ The objective of this lab was to install and configure Ubuntu Linux in a virtual
 
 VMware Workstation was installed and configured to host Ubuntu Linux in a virtual machine environment.
 
-![VMware Installed](vmware-installed.png)
+![VMware Installed](screenshots/vmware-installed.png)
 
 ## Deliverable 2 - Ubuntu ISO Downloaded
 
 The Ubuntu ISO image was downloaded from the official Ubuntu website and used as installation media.
 
-![Ubuntu ISO](ubuntu-iso.png)
+![Ubuntu ISO](screenshots/ubuntu-iso.png)
 
 ## Deliverable 3 - New Virtual Machine Created
 
 A new Ubuntu virtual machine was created with at least 2048 MB RAM and the ISO image mounted as a virtual CD drive.
 
-![VM Settings](vm-settings.png)
+![VM Settings](screenshots/vm-settings.png)
 
 ## Deliverable 4 - Ubuntu Installation Completed
 
 Ubuntu Linux was successfully installed and rebooted inside the virtual machine.
 
-![Ubuntu Desktop](ubuntu-desktop.png)
+![Ubuntu Desktop](screenshots/ubuntu-desktop.png)
 
 ## Deliverable 5 - Networking Mode Configured
 
 NAT networking was configured to provide internet access from the virtual machine.
 
-![Network Settings](network-settings.png)
+![Network Settings](screenshots/network-settings.png)
 
 ## Deliverable 6 - Ubuntu Running Successfully
 
 Ubuntu was verified to be fully operational through the graphical desktop and terminal interface.
 
-![Ubuntu Running](ubuntu-running.png)
+![Ubuntu Running](screenshots/ubuntu-running.png)
 
 # Part 1a-2 Ubuntu Desktop and Command Line Familiarisation
 
@@ -48,11 +48,11 @@ Ubuntu was verified to be fully operational through the graphical desktop and te
 
 Ubuntu desktop applications including Firefox, LibreOffice, File Manager and Ubuntu Software Centre were explored.
 
-![Firefox](firefox.png)
+![Firefox](screenshots/firefox.png)
 
-![LibreOffice](libreoffice.png)
+![LibreOffice](screenshots/libreoffice.png)
 
-![File Manager](file-manager.png)
+![File Manager](screenshots/file-manager.png)
 
 ## Terminal Commands
 
@@ -66,7 +66,7 @@ ls -la
 ls -alt
 ```
 
-![Terminal Commands](terminal-commands.png)
+![Terminal Commands](screenshots/terminal-commands.png)
 
 ## File Operations
 
@@ -81,7 +81,7 @@ rm moved.txt
 ls -lah
 ```
 
-![File Operations](file-operations.png)
+![File Operations](screenshots/file-operations.png)
 
 ## System Information
 
@@ -94,9 +94,9 @@ hostnamectl
 less /proc/cpuinfo
 ```
 
-![System Information](system-information.png)
+![System Information](screenshots/system-information.png)
 
-![Cpu Info](cpu-info.png)
+![Cpu Info](screenshots/cpu-info.png)
 
 ## User Privilege Experiment
 
@@ -109,7 +109,7 @@ sudo whoami
 
 The purpose of sudo and the role of the root user were investigated.
 
-![User Privileges](user-privileges.png)
+![User Privileges](screenshots/user-privileges.png)
 
 ## Networking Tests
 
@@ -120,7 +120,7 @@ ip a
 ping 8.8.8.8
 ```
 
-![Networking](networking.png)
+![Networking](screenshots/networking.png)
 
 ## DNS and Hosts File
 
@@ -131,7 +131,7 @@ nslookup google.com
 whois google.com
 ```
 
-![DNS Lookup](dns-lookup.png)
+![DNS Lookup](screenshots/dns-lookup.png)
 
 ## Hardware Information
 
@@ -143,7 +143,7 @@ lspci
 less /proc/cpuinfo
 ```
 
-![Hardware Information](hardware-info.png)
+![Hardware Information](screenshots/hardware-info.png)
 
 ## Software Installation
 
@@ -151,15 +151,15 @@ Software installation methods explored included:
 
 * Ubuntu Software Centre
 
-![Ubuntu Software Centre](software-centre.png)
+![Ubuntu Software Centre](screenshots/software-centre.png)
 
 * APT Package Manager
 
-![APT Package Manager](apt-install.png)
+![APT Package Manager](screenshots/apt-install.png)
 
 * Software as a Service (SaaS)
 
-![SaaS](saas.png)
+![SaaS](screenshots/saas.png)
 
 ## Source Code Compilation
 
@@ -170,7 +170,7 @@ gcc hello_world.c -o hello_world_executable
 ./hello_world_executable
 ```
 
-![Compilation](compilation.png)
+![Compilation](screenshots/compilation.png)
 
 ## Summary
 
