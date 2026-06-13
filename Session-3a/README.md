@@ -149,7 +149,7 @@ certbot --version
 
 ![Cerbot installed using Snap](screenshots/3a2-01-certbot-snap.png)
 
-![Cerbot Version](screenshots/3a2-02-certbot-version.png)
+![Cerbot Version](screenshots/3a2-01-certbot-version.png)
 
 
 ## Deliverable 3 : Certificate successfully issued
