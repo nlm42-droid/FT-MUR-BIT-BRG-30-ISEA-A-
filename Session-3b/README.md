@@ -87,7 +87,7 @@ Run script:
 ~/testscript
 ```
 
-![Script execution and backup folder contents](screenshots/3b1-03-basic-script)
+![Script execution and backup folder contents](screenshots/3b1-03-basic-script.png)
 
 ---
 
@@ -227,7 +227,7 @@ When prompted:
 yes
 ```
 
-![SSH fingerprint acceptance](screenshots/3b1-09-fingerprint-accept.png)
+![SSH fingerprint acceptance](screenshots/3b1-09-ssh-fingerprint-accept.png)
 
 ---
 
