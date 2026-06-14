@@ -426,7 +426,7 @@ Extracting the file
 tar -xvf 1b-3-Gutenberg.tar
 ```
 
-![Archive Extraction](screenshots/1b3-01-archive.png)
+![Archive Extraction](screenshots/1b3-01-archieve.png)
 
 ---
 
@@ -457,7 +457,7 @@ find . -name "*.txt"
 When I use ``` ./1b-3-Gutenberg ```
 There is no outcome because the archieve zip file only includes 3 files (moby, twocities, frankenstein) not under any folders.
 
-![Filename Search](screenshots/1b3-03-filenamepng)
+![Filename Search](screenshots/1b3-03-filename.png)
 
 --- 
 
