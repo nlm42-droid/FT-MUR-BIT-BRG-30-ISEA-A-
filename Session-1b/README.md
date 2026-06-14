@@ -10,6 +10,13 @@ The objective of this lab was to explore Linux system administration, networking
 
 Apache web server was installed and tested successfully using localhost.
 
+### Commands Used
+
+```bash
+sudo apt update
+sudo apt install apache2 -y
+```
+
 ![Apache Installation](screenshots/1b-apache-installed.png)
 
 ![Apache Default Page](screenshots/1b-apache-default.png)
@@ -28,6 +35,12 @@ The Apache default webpage was modified with custom content and verified through
 
 The local IP address was identified using the ip a command and used for networking activities.
 
+### Commands Used
+
+```bash
+ip a
+```
+
 ![IP Address](screenshots/1b-ip-address.png)
 
 ---
@@ -35,6 +48,13 @@ The local IP address was identified using the ip a command and used for networki
 ## Deliverable 4 - Nmap Port Scan
 
 Open ports and running services were identified using Nmap.
+
+### Commands Used
+
+```bash
+sudo apt install nmap -y
+nmap 127.0.0.1
+```
 
 ![Nmap Scan](screenshots/1b-nmap-scan.png)
 
@@ -44,6 +64,14 @@ Open ports and running services were identified using Nmap.
 
 UFW firewall was enabled and configured to allow web traffic on port 80.
 
+### Commands Used
+
+```bash
+sudo ufw status verbose
+sudo ufw enable
+sudo ufw allow 80
+```
+
 ![Firewall Status](screenshots/1b-firewall.png)
 
 ---
@@ -52,6 +80,13 @@ UFW firewall was enabled and configured to allow web traffic on port 80.
 
 SSH service was installed and tested successfully.
 
+### Commands Used
+
+```bash
+sudo apt install openssh-server -y
+systemctl status ssh
+ssh localhost
+```
 ![SSH Test](screenshots/1b-ssh.png)
 
 ---
@@ -59,6 +94,13 @@ SSH service was installed and tested successfully.
 ## Deliverable 7 - New User Created
 
 A new Linux user account was created and verified.
+
+### Commands Used
+
+```bash
+sudo adduser testuser
+grep testuser /etc/passwd
+```
 
 ![User Created](screenshots/1b-user-created.png)
 
@@ -68,6 +110,20 @@ A new Linux user account was created and verified.
 
 Files were archived and compressed using tar and bzip2.
 
+### Commands Used
+
+```bash
+ls
+pwd
+mkdir books
+touch books/file1.txt
+cd ~/books
+tar cf books.tar books
+bzip2 books.tar
+bunzip2 books.tar.bz2
+tar -xvf books.tar
+```
+
 ![Compression](screenshots/1b-compression.png)
 
 ---
@@ -75,6 +131,12 @@ Files were archived and compressed using tar and bzip2.
 ## Deliverable 9 - SCP File Transfer
 
 Files were transferred securely using SCP.
+
+### Commands Used
+
+```bash
+scp file.txt localhost:/home/nyan-lin-maung/
+```
 
 ![SCP Transfer](screenshots/1b-scp-transfer.png)
 
@@ -84,6 +146,19 @@ Files were transferred securely using SCP.
 
 The hosts file was edited and a custom hostname was tested.
 
+### Commands Used
+
+```bash
+sudo nano /etc/hosts
+ping GoogleEpicDNS
+```
+
+What's added in the hosts
+
+```text
+8.8.8.8	GoogleEpicDNS
+```
+
 ![Hosts File](screenshots/1b-host-file.png)
 
 ---
@@ -91,6 +166,15 @@ The hosts file was edited and a custom hostname was tested.
 ## Deliverable 11 - DNS Lookup and Whois
 
 Domain information was investigated using nslookup and whois.
+
+### Commands Used
+
+```bash
+sudo apt install whois dnsutils -y
+
+nslookup google.com
+whois google.com
+```
 
 ![DNS Lookup](screenshots/1b-nslookup&whois.png)
 
@@ -100,6 +184,13 @@ Domain information was investigated using nslookup and whois.
 
 Public and private IP addresses were compared and analysed.
 
+
+### Commands Used
+
+```bash
+ip a
+```
+
 ![Public vs Private IP](screenshots/1b-public&private_IP.png)
 
 ---
@@ -107,6 +198,15 @@ Public and private IP addresses were compared and analysed.
 ## Deliverable 13 - Hardware Information
 
 System hardware information was obtained using Linux commands.
+
+### Commands Used
+
+```bash
+lsusb
+lspci
+
+less /proc/cpuinfo
+```
 
 ![Hardware Information](screenshots/1b-hardwareinfo.png)
 
@@ -117,6 +217,15 @@ System hardware information was obtained using Linux commands.
 ## Deliverable 14 - Output Redirection
 
 Command output was redirected to a file and reviewed.
+
+### Commands Used
+
+```bash
+lsusb > output_of_lsusb
+cat output_of_lsusb
+
+ls -la output_of_lsusb
+```
 
 ![Output Redirection](screenshots/1b-redirect-output.png)
 
@@ -129,6 +238,16 @@ Command output was redirected to a file and reviewed.
 
 Three users (alice, bob and mallory) were created and verified.
 
+### Commands Used
+
+```bash
+sudo adduser alice
+sudo adduser bob
+sudo adduser mallory
+
+less /etc/passwd
+```
+
 ![Users Created](screenshots/1b2-01-users-created.png)
 
 ---
@@ -136,6 +255,16 @@ Three users (alice, bob and mallory) were created and verified.
 ## Deliverable 2 - Group Created and Configured
 
 A shared group was created and users were assigned appropriately.
+
+### Commands Used
+
+```bash
+sudo groupadd sharedgroup
+sudo usermod -aG sharedgroup alice
+sudo usermod -aG sharedgroup bob
+
+less /etc/group
+```
 
 ![Group Created](screenshots/1b2-02-groupadd.png)
 
@@ -147,6 +276,16 @@ A shared group was created and users were assigned appropriately.
 
 A shared directory was created and ownership configured.
 
+### Commands Used
+
+```bash
+sudo mkdir /home/shared
+
+sudo chgrp sharedgroup /home/shared
+
+ls -ld /home/shared
+```
+
 ![Shared Directory](screenshots/1b2-03-shared-directory.png)
 
 ---
@@ -155,13 +294,33 @@ A shared directory was created and ownership configured.
 
 Ten files were created within the shared directory.
 
-![Shared Files](screenshots/1b2-04-shared-directory.png)
+### Commands Used
+
+```bash
+sudo touch /home/shared/file{1..10}
+ls -l /home/shared
+```
+
+![Shared Files](screenshots/1b2-04-ten-files.png)
 
 ---
 
 ## Deliverable 5 - Permissions Assigned
 
 Permissions were configured using chmod, chown and chgrp.
+
+### Commands Used
+
+```bash
+sudo chmod 770 /home/shared
+sudo find /home/shared -type f -exec chmod 750 {} \;
+
+sudo ls -l /home/shared
+```
+
+Command that doesn't work ```bash
+sudo chmod 750 /home/shared/*
+```
 
 ![Permissions](screenshots/1b2-05-permissions.png)
 
@@ -171,6 +330,17 @@ Permissions were configured using chmod, chown and chgrp.
 
 Access permissions were tested using alice, bob and mallory accounts.
 
+### Commands Used
+
+```bash
+whoami
+ls -l /home/shared
+
+su - alice
+su - bob
+su - mallory
+```
+
 ![User Access Test](screenshots/1b2-06-user-access.png)
 
 ---
@@ -178,6 +348,16 @@ Access permissions were tested using alice, bob and mallory accounts.
 ## Deliverable 7 - Recursive Permission Commands
 
 Recursive permission changes were applied successfully.
+
+### Commands Used
+
+```bash
+sudo chgrp -R sharedgroup /home/shared
+sudo chmod -R 770 /home/shared
+sudo chown -R root:sharedgroup /home/shared
+
+sudo ls -l /home/shared
+```
 
 ![Permissions](screenshots/1b2-07-recursive.png)
 
@@ -187,6 +367,13 @@ Recursive permission changes were applied successfully.
 
 Mallory was granted sudo privileges.
 
+### Commands Used
+
+```bash
+sudo usermod -aG sudo mallory
+groups mallory
+```
+
 ![Mallory Sudo Group](screenshots/1b2-08-sudo-user.png)
 
 ---
@@ -195,6 +382,13 @@ Mallory was granted sudo privileges.
 
 Mallory successfully executed privileged commands.
 
+### Commands Used
+
+```bash
+su - mallory
+sudo ls /root
+```
+
 ![Sudo Test](screenshots/1b2-09-sudo-access.png)
 
 ---
@@ -202,6 +396,13 @@ Mallory successfully executed privileged commands.
 ## Deliverable 10 - Clean-up Completed
 
 The shared directory and files were removed.
+
+### Commands Used
+
+```bash
+sudo rm -r /home/shared
+sudo ls -ld /home/shared
+```
 
 ![Cleanup](screenshots/1b2-10-deleted.png)
 
