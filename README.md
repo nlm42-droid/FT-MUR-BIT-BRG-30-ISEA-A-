@@ -21,8 +21,3 @@ This repository contains my BRG-ISEA Lab Activities Sessions.
 - [Session 3a - DNS and Certificates](/Session-3a)
 - [Session 3b - Server Automation](/Session-3b)
 
-
-## Session 4
-
-- [Session 4a - Additional Server Services](/Session-4a)
-- [Session 4b - Reflection Journal](/Session-4b)
