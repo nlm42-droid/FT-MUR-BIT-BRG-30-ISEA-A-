@@ -292,8 +292,8 @@ docker --version
 
 ## Deliverable 2 : Running hello-world
 
-When I run ```bash sudo docker run hello-world ```
-, docker looks for a local image called ```text hello-world ```
+When I run ``` sudo docker run hello-world ```
+, docker looks for a local image called ``` hello-world ```
 . If it doesn't exist, Docker downloads hello-world image from Docker Hub.
 
 Docker then creates a container from that image and runs it.
