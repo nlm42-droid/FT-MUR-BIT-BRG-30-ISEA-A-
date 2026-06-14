@@ -414,61 +414,154 @@ sudo ls -ld /home/shared
 
 The Gutenberg archive was successfully extracted.
 
-![Archive Extraction](1b-archive-extraction.png)
+# Commands Used
+
+The archieve file was already in bz2, that's why outcomes the error.
+```bash
+bunzip2 1b-3-Gutenberg.tar.bz2
+```
+
+Extracting the file
+```bash
+tar -xvf 1b-3-Gutenberg.tar
+```
+
+![Archive Extraction](screenshots/1b3-01-archive.png)
+
+---
 
 ## Deliverable 2 - File Listing
 
 Extracted files were listed and verified.
 
-![File Listing](1b-file-listing.png)
+### Commands Used
+
+```bash
+ls -l
+tree
+```
+
+![File Listing](screenshots/1b3-02-filelist.png)
+
+---
 
 ## Deliverable 3 - Filename Search
 
 Files were searched by filename and extension.
 
-![Filename Search](1b-filename-search.png)
+### Commands Used
+
+```bash
+find . -name "*.txt"
+```
+When I use ``` ./1b-3-Gutenberg ```
+There is no outcome because the archieve zip file only includes 3 files (moby, twocities, frankenstein) not under any folders.
+
+![Filename Search](screenshots/1b3-03-filenamepng)
+
+--- 
 
 ## Deliverable 4 - Text Search Using Grep
 
 Text searches were performed using grep.
 
-![Grep Search](1b-grep-search.png)
+### Commands Used
+
+```bash
+find . -name "*.txt"
+grep -r "best"
+grep -r "i"
+```
+
+![Grep Search](screenshots/1b3-04-textsearch.png)
+
+---
 
 ## Deliverable 5 - Context Search
 
 Contextual text searching was performed.
 
-![Context Search](1b-context-search.png)
+### Commands Used
+
+```bash
+grep -r -C 3 "Next day there was a surprise for Jack" .
+grep -r -C 3 "It was"
+grep -r -C 3 "Call me"
+```
+
+![Context Search](screenshots/1b3-05-textsearch.png)
+
+![Context Search 2](screenshots/1b3-05.png)
+
+---
 
 ## Deliverable 6 - Date-Based Search
 
 Files were searched and sorted by modification date.
 
-![Date Search](1b-date-search.png)
+### Commands Used
+
+```bash
+find -type f -printf '%T+ %p\n' | sort
+```
+
+![Date Search](screenshots/1b3-06-datebased.png)
+
+---
 
 ## Deliverable 7 - Size-Based Search
 
 Files were searched by exact size.
 
-![Size Search](1b-size-search.png)
+### Commands Used
+
+```bash
+ls -lh *.txt
+find . -type f -size 94c -exec ls -lh {} \;
+find . -type f -size +1c
+```
+
+![Size Search](screenshots/1b3-07-filesize.png)
+
+---
+
 
 ## Deliverable 8 - Largest Files Found
 
 The largest files in the archive were identified.
 
-![Largest Files](1b-largest-files.png)
+### Commands Used
+
+```bash
+du -a . | sort -nr | head
+```
+
+![Largest Files](screenshots/1b3-08-largestfile.png)
+
+---
 
 ## Deliverable 9 - Word Frequency Analysis
 
 Word frequency analysis was performed using sed, sort and uniq.
 
-![Word Frequency](1b-word-frequency.png)
+### Commands Used
+
+```bash
+sed -e 's/\s/\n/g' < moby.txt | sort | uniq -c | sort -nr | head -200
+sed -e 's/\s/\n/g' < frankenstein.txt | sort | uniq -c | sort -nr | head -200
+```
+
+![Word Frequency](screenshots/1b3-09-word-frequency.png)
+
+---
 
 ## Deliverable 10 - Answers to Analytical Questions
 
 All required analytical questions were answered.
 
-![Answers File](1b-answers-file.png)
+![Answers File](screenshots/1b3-10-answer.png)
+
+---
 
 ## Summary
 
