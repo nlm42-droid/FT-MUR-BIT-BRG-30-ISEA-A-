@@ -14,6 +14,7 @@ Apache web server was installed and tested successfully using localhost.
 
 ![Apache Default Page](screenshots/1b-apache-default.png)
 
+---
 
 ## Deliverable 2 - Modified index.html Page
 
@@ -21,6 +22,7 @@ The Apache default webpage was modified with custom content and verified through
 
 ![Custom Index Page](screenshots/1b-modified-index.png)
 
+---
 
 ## Deliverable 3 - IP Address Identified
 
@@ -28,6 +30,7 @@ The local IP address was identified using the ip a command and used for networki
 
 ![IP Address](screenshots/1b-ip-address.png)
 
+---
 
 ## Deliverable 4 - Nmap Port Scan
 
@@ -35,6 +38,7 @@ Open ports and running services were identified using Nmap.
 
 ![Nmap Scan](screenshots/1b-nmap-scan.png)
 
+---
 
 ## Deliverable 5 - Firewall Configuration
 
@@ -42,6 +46,7 @@ UFW firewall was enabled and configured to allow web traffic on port 80.
 
 ![Firewall Status](screenshots/1b-firewall.png)
 
+---
 
 ## Deliverable 6 - SSH Enabled and Tested
 
@@ -49,6 +54,7 @@ SSH service was installed and tested successfully.
 
 ![SSH Test](screenshots/1b-ssh.png)
 
+---
 
 ## Deliverable 7 - New User Created
 
@@ -56,6 +62,7 @@ A new Linux user account was created and verified.
 
 ![User Created](screenshots/1b-user-created.png)
 
+---
 
 ## Deliverable 8 - Compression and Decompression
 
@@ -63,6 +70,7 @@ Files were archived and compressed using tar and bzip2.
 
 ![Compression](screenshots/1b-compression.png)
 
+---
 
 ## Deliverable 9 - SCP File Transfer
 
@@ -70,6 +78,7 @@ Files were transferred securely using SCP.
 
 ![SCP Transfer](screenshots/1b-scp-transfer.png)
 
+---
 
 ## Deliverable 10 - Hosts File Modified
 
@@ -77,6 +86,7 @@ The hosts file was edited and a custom hostname was tested.
 
 ![Hosts File](screenshots/1b-host-file.png)
 
+---
 
 ## Deliverable 11 - DNS Lookup and Whois
 
@@ -84,6 +94,7 @@ Domain information was investigated using nslookup and whois.
 
 ![DNS Lookup](screenshots/1b-nslookup&whois.png)
 
+---
 
 ## Deliverable 12 - Public vs Private IP
 
@@ -91,6 +102,7 @@ Public and private IP addresses were compared and analysed.
 
 ![Public vs Private IP](screenshots/1b-public&private_IP.png)
 
+---
 
 ## Deliverable 13 - Hardware Information
 
@@ -100,6 +112,7 @@ System hardware information was obtained using Linux commands.
 
 ![CPU Information](screenshots/1b-cpuinfo.png)
 
+---
 
 ## Deliverable 14 - Output Redirection
 
@@ -107,67 +120,92 @@ Command output was redirected to a file and reviewed.
 
 ![Output Redirection](screenshots/1b-redirect-output.png)
 
+---
+
+
 # Part 1b-2 Linux File Permissions and Group Access Control
 
 ## Deliverable 1 - Three Users Created
 
 Three users (alice, bob and mallory) were created and verified.
 
-![Users Created](1b-users-created.png)
+![Users Created](screenshots/1b2-01-users-created.png)
+
+---
 
 ## Deliverable 2 - Group Created and Configured
 
 A shared group was created and users were assigned appropriately.
 
-![Group Created](1b-group-created.png)
+![Group Created](screenshots/1b2-02-groupadd.png)
+
+![Output](screenshots/1b2-02-output.png)
+
+---
 
 ## Deliverable 3 - Shared Directory Created
 
 A shared directory was created and ownership configured.
 
-![Shared Directory](1b-shared-directory.png)
+![Shared Directory](screenshots/1b2-03-shared-directory.png)
+
+---
 
 ## Deliverable 4 - Ten Files Created
 
 Ten files were created within the shared directory.
 
-![Shared Files](1b-shared-directory.png)
+![Shared Files](screenshots/1b2-04-shared-directory.png)
+
+---
 
 ## Deliverable 5 - Permissions Assigned
 
 Permissions were configured using chmod, chown and chgrp.
 
-![Permissions](1b-permissions.png)
+![Permissions](screenshots/1b2-05-permissions.png)
+
+---
 
 ## Deliverable 6 - User Access Verified
 
 Access permissions were tested using alice, bob and mallory accounts.
 
-![User Access Test](1b-user-access-test.png)
+![User Access Test](screenshots/1b2-06-user-access.png)
+
+---
 
 ## Deliverable 7 - Recursive Permission Commands
 
 Recursive permission changes were applied successfully.
 
-![Permissions](1b-permissions.png)
+![Permissions](screenshots/1b2-07-recursive.png)
+
+---
 
 ## Deliverable 8 - Mallory Added to Sudo Group
 
 Mallory was granted sudo privileges.
 
-![Mallory Sudo Group](1b-mallory-sudo-group.png)
+![Mallory Sudo Group](screenshots/1b2-08-sudo-user.png)
+
+---
 
 ## Deliverable 9 - Sudo Access Tested
 
 Mallory successfully executed privileged commands.
 
-![Sudo Test](1b-sudo-test.png)
+![Sudo Test](screenshots/1b2-09-sudo-access.png)
+
+---
 
 ## Deliverable 10 - Clean-up Completed
 
 The shared directory and files were removed.
 
-![Cleanup](1b-cleanup.png)
+![Cleanup](screenshots/1b2-10-deleted.png)
+
+---
 
 # Part 1b-3 File Search, Analysis and Archiving
 
