@@ -1,4 +1,4 @@
-# 2a-1 Total Cost of Ownership (TCO) Analysis
+# Session 2a - Total Cost of Ownership (TCO) Analysis
 
 ## Lab Objective
 
