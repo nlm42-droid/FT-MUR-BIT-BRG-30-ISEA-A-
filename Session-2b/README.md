@@ -165,7 +165,7 @@ A Bash script was created using loops, user input, and conditional statements to
 
 ![Loop and Conditional Script](screenshots/2b2-05-loop-script.png)
 
-![Output](screenshots/2b2--05-output.png)
+![Output](screenshots/2b2-05-output.png)
 
 ---
 
