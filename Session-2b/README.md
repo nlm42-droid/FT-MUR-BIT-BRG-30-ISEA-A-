@@ -184,8 +184,13 @@ The first condition becomes true, and the corresponding message is displayed.
 ```
 
 ### How could invalid input be handled?
-```text
-Input validation can be added before processing.
+
+Invalid Input can be handled with the following script:
+```bash
+if ! [[ $num =~ ^[0-9]+$ ]]
+then
+  echo "Invalid Input" 
+fi
 ```
 
 ---
