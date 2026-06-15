@@ -1,11 +1,11 @@
 # Session 3a - Domain, DNS, HTTPS and TLS Certification
 
-# Part 3a-1 : Domain, DNS and TLS certificates with Let's Encrypt
-
-
 ## Lab Objective
 
 The object of this lab was to configure a cloud-hosted Ubuntu server, install and configure an Apache web server, register and cinfigure a domain name, verify DNS functionality, and secure the website using HTTPS with a TLS certificate issued by Let's Encrypt. The lab also provided practical experience with domain managemnet, DNS resolution, web server deployment, and certificate management using Certbot.
+
+
+# Part 3a-1 : Domain, DNS and TLS certificates with Let's Encrypt
 
 ## Activity 1 - Domain, DNS
 
