@@ -102,11 +102,29 @@ Azure Cost Management tools were reviewed to understand cloud resource usage and
 
 Basic Linux file management commands were used to create directories, create files, copy files, rename files, and remove files.
 
+![LabFile](screenshots/2b2-01-operation.png)
+
 ---
 
 ## Deliverable 2 – Reflection on File System Commands
 
 Understanding of Linux file system commands was demonstrated through written responses explaining directory creation, file viewing, and file management operations.
+
+### What command creates a directory?
+```bash
+mkdir
+```
+
+### How do you view file content without a GUI?
+```bash
+cat filename
+```
+
+### Difference between cp and mv?
+```text
+cp copies a file
+mv moves or renames a file
+```
 
 ---
 
@@ -114,11 +132,30 @@ Understanding of Linux file system commands was demonstrated through written res
 
 A simple Bash script was created using the shebang (`#!/bin/bash`) and executed successfully after assigning executable permissions.
 
+![Script](screenshots/2b2-03-script.png)
+
+![Output](screenshots/2b2-03-output.png)
+
 ---
 
 ## Deliverable 4 – Reflection on Script Fundamentals
 
 Written responses demonstrated understanding of executable permissions, script execution, and script customization.
+
+### What is chmod +x for?
+```text
+It gives execute permission to a script.
+```
+
+### Why is #!/bin/bash used?
+```text
+It tells Linux to execute the script using Bash.
+```
+
+### How can script output be personalized?
+```text
+Custom messages and variables can be added.
+```
 
 ---
 
@@ -126,11 +163,30 @@ Written responses demonstrated understanding of executable permissions, script e
 
 A Bash script was created using loops, user input, and conditional statements to perform simple decision-making tasks.
 
+![Loop and Conditional Script](screenshots/2b2-05-loop-script.png)
+
+![Output](screenshots/2b2--05-output.png)
+
 ---
 
 ## Deliverable 6 – Reflection on Loops and Conditionals
 
 The behavior of loops and conditional structures was analyzed through written reflections and explanations.
+
+### How does the "for" loop work?
+```text
+It repeats commands for each value in a sequence.
+```
+
+### What happens if the number is greater than 10?
+```text
+The first condition becomes true, and the corresponding message is displayed.
+```
+
+### How could invalid input be handled?
+```text
+Input validation can be added before processing.
+```
 
 ---
 
@@ -138,11 +194,30 @@ The behavior of loops and conditional structures was analyzed through written re
 
 A system monitoring script was created to display CPU, memory, and disk usage information using Linux monitoring commands.
 
+![System Monitoring](screenshots/2b2-07-script.png)
+
+![Output](screenshots/2b2-07-output.png)
+
 ---
 
 ## Deliverable 8 – Reflection on Monitoring Automation
 
-Written responses explained the purpose of automation, system monitoring, and possible enhancements for future monitoring tasks.
+Written responses explained the purposes of automation and system monitoring and outlined possible enhancements for future monitoring tasks.
+
+### What does free -h show?
+```text
+It displays system memory usage in a human-readable format.
+```
+
+### How could the script monitor network usage?
+```text
+Commands such as "ifconfig", "ip", or "vnstat" can be added.
+```
+
+### Why is automation important?
+```text
+Automation reduces manual work, saves time, and improves consistency.
+```
 
 ---
 
