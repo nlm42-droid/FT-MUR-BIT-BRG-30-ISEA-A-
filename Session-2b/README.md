@@ -12,11 +12,15 @@ The objective of Session 2B was to develop practical skills in cloud computing, 
 
 An Ubuntu virtual machine was successfully created in Microsoft Azure and configured with a public IP address for remote access.
 
+![Cloud Server](screenshots/2b1-01-azurevm.png)
+
 ---
 
 ## Deliverable 2 – Network Security Rules Configured
 
 Inbound rules were configured to allow SSH (Port 22) and HTTP (Port 80) traffic to reach the virtual machine.
+
+![Networking setting](screenshots/2b1-02-networking.png)
 
 ---
 
@@ -24,11 +28,17 @@ Inbound rules were configured to allow SSH (Port 22) and HTTP (Port 80) traffic 
 
 A secure SSH connection was successfully established to remotely manage the Azure virtual machine.
 
+![SSH Access](screenshots/2b1-03-ssh-login.png)
+
 ---
 
 ## Deliverable 4 – Apache Web Server Installed and Tested
 
 Apache Web Server was installed on the Ubuntu virtual machine and verified through a web browser.
+
+![Apache Test](screenshots/2b1-04-apache2.png)
+
+![Apache Webpage](screenshots/2b1-04.png)
 
 ---
 
@@ -36,11 +46,17 @@ Apache Web Server was installed on the Ubuntu virtual machine and verified throu
 
 The default Apache homepage was modified with personalized content and successfully displayed through the browser.
 
+![Custome WebPage](screenshots/2b1-05-customweb.png)
+
+![Output](screenshots/2b1-05.png)
+
 ---
 
 ## Deliverable 6 – External File Downloaded
 
 A file was downloaded onto the virtual machine using the wget command.
+
+![External File Download](screenshots/2b1-06-download.png)
 
 ---
 
@@ -48,11 +64,15 @@ A file was downloaded onto the virtual machine using the wget command.
 
 The downloaded file was copied into Apache's web directory and made accessible through the website.
 
+![File Sync to Webserver](screenshots/2b1-07-copyto-web.png)
+
 ---
 
 ## Deliverable 8 – File Access Verified
 
 The uploaded file was successfully accessed using the virtual machine's public IP address.
+
+![File Access from Webserver](screenshots/2b1-08-webfile-access.png)
 
 ---
 
@@ -60,19 +80,20 @@ The uploaded file was successfully accessed using the virtual machine's public I
 
 A hyperlink was created within the webpage to provide direct access to the uploaded file.
 
+![Hyperlink](screenshots/2b1-09-hyperlink.png)
+
+![Output](screenshots/2b1-09.png)
+
 ---
 
 ## Deliverable 10 – Cost Monitoring Reviewed
 
 Azure Cost Management tools were reviewed to understand cloud resource usage and billing.
 
----
-
-## Deliverable 11 – Virtual Machine Stopped
-
-The virtual machine was stopped after testing to demonstrate responsible cloud resource management.
+![Webserver Cost Monitoring](screenshots/2b1-10-cost.png)
 
 ---
+
 
 
 # Part 2b-2 – Introduction to Bash Scripting & System Automation
