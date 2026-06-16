@@ -2,149 +2,175 @@
 
 ## Lab Objective
 
-The objective of this activity was to apply the Total Cost of Ownership (TCO) methodology by comparing two printer models over a five-year period. Fixed and variable costs were analysed to determine the overall cost of ownership and identify the most cost-effective printer for different usage scenarios.
+The objective of this activity was to apply the Total Cost of Ownership (TCO) methodology by comparing a cloud-based infrastructure solution with a traditional on-premises infrastructure solution. Fixed and variable costs were analyzed to determine the overall cost of ownership and identify the most cost-effective deployment option over a three-year period.
 
 ---
 
-## Deliverable 1 – Printer Models Chosen
+## Deliverable 1 – Infrastructure Models Chosen
 
-| Printer                       | Type       | Intended Use             |
-| ----------------------------- | ---------- | ------------------------ |
-| Epson Expression Home XP-2205 | Inkjet     | Home / Personal Use      |
-| Brother HL-L2400DW            | Mono Laser | Small Office / Workgroup |
+| Option                              | Type                       | Intended Use                 |
+| ----------------------------------- | -------------------------- | ---------------------------- |
+| Microsoft Azure B2s Virtual Machine | Cloud Infrastructure       | Small Business / Web Hosting |
+| Dell PowerEdge T150 Server          | On-Premises Infrastructure | Small Office / Local Hosting |
 
-The Epson XP-2205 represents an entry-level inkjet printer suitable for home users. The Brother HL-L2400DW represents a laser printer designed for higher-volume office printing.
+The Azure B2s Virtual Machine is a cloud-based solution that rents computing resources on demand. The Dell PowerEdge T150 represents a traditional server that requires ownership of hardware, software licenses, and ongoing maintenance.
 
 ---
 
 ## Deliverable 2 – Cost Assumptions
 
-| Assumption             | Value                      |
-| ---------------------- | -------------------------- |
-| Comparison Period      | 5 Years                    |
-| Pages Printed per week | 750                        |
-| Runtime per week       | 40 Hours                   |
-| Electricity Rate       | S$ 0.30/kWh                |
-| Paper Cost (per ream)  | S$ 6 (500 sheets)          |
-| Total Pages Printed    | 195,000 pages              |
+The following assumptions were used throughout the analysis:
 
-Total pages printed over five years:
-```text
-750 x 52 x 5 = 195,000 pages
-```
-This value was used to determine the number of cartridges, toner replacements, paper reams, and electricity consumption required throughout the analysis period.
+| Assumption               | Value                           |
+| ------------------------ | ------------------------------- |
+| Analysis Period          | 3 Years                         |
+| Server Runtime           | 24 Hours per Day                |
+| Operating Days           | 365 Days per Year               |
+| Azure VM Type            | B2s (2 vCPU, 4GB RAM)           |
+| Storage Requirement      | 64GB SSD                        |
+| Electricity Rate         | S$ 0.30/kWh                     |
+| Server Power Consumption | 200W Average                    |
+| Software Requirement     | Windows Server 2022 Standard (16-core) |
+
+These assumptions were used consistently across all cost calculations.
 
 ---
 
-## Deliverable 3 – Expense Items
+## Deliverable 3 – List of Expense Items
 
-### Fixed Costs
+### Cloud Infrastructure Costs
 
-* Printer purchase price
+#### Fixed Costs
 
-### Variable Costs
+- Initial deployment and configuration
 
-* Ink/Toner cartridges
-* Paper
-* Electricity
+#### Variable Costs
 
-Fixed costs are expenses that occur once during the ownership period. Variable costs vary with printing volume and printer usage.
+- Monthly virtual machine charges
+- Storage charges
+- Public IP charges
+- Backup service charges
+
+### On-Premises Infrastructure Costs
+
+#### Fixed Costs
+
+- Physical server hardware
+- Windows Server license
+- UPS power backup
+
+#### Variable Costs
+
+- Electricity consumption
+- Hardware maintenance
+- Replacement components
+
 
 ---
 
 ## Deliverable 4 – Unit Costs Sourced
 
-The following pricing information was collected from manufacturer websites and online retailers:
+| Item                       | Cost | Unit         | Source                                                                            |
+| -------------------------- | ---- | ------------ | --------------------------------------------------------------------------------- |
+| Azure B2s VM               | S$ 44.38   | per month    | Azure Pricing Calculator                                                          |
+| Azure Managed Disk 64GB    | S$ 10.21   | per month    | Azure Pricing Calculator                                                          |
+| Azure Public IP            | S$ 2    | per month    | Azure Pricing Calculator                                                          |
+| Azure Backup Service       | S$ 5    | per month   | [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) |
+| Dell PowerEdge T150 Server | S$ 2800 | one-time | [Sim Lim](http://www.simlimsquare.com.sg/public/product/dell-poweredge-t150-poweredge-t150-xeon-e-2324g-1x8gb-di-9847)                                      |
+| Windows Server 2022 Standard     | S$ 1173 | SGD one-time | [SourceIT](https://sourceit.com.sg/products/dell-microsoft-windows-server-2022-standard-rok-16-core-634-bykr?srsltid=AfmBOoq-IAjBhyEDJPdYlU8TxIgrl5_OG_VOotR4om9mxrUrdpna7Q4R&utm_source=chatgpt.com)                       |
+| UPS Backup Unit            | S$ 200  | one-time | Retail estimate                                                                   |
+| Electricity                | S$ 0.3  | per kWh      | [SP Group Singapore](https://www.ema.gov.sg/consumer-information/electricity/buying-electricity/buying-at-regulated-tariff)                                 |
+| Maintenance                | S$ 150  | per year     | Assumption                                                                        |
 
-| Item                  | Epson Expression Home XP-2205 | Brother HL-L2400DW    |
-| --------------------- | ----------------------------- | --------------------- |
-| Printer Price         | S$ 69                         | S$ 149                |
-| Cartridge/Toner Price | S$ 21 per cartridge           | S$ 80 per toner       |
-| Yield (pages)         | 150 Pages per cartridge       | 1,200 Pages per toner |
-| Paper Cost (per ream) | S$ 6                          | S$ 6                  |
-
-Pricing and yield information were obtained from product specifications and online retailers.
+The pricing information was obtained from the Azure Pricing Calculator, Dell Singapore, Microsoft Licensing information, and SP Group Singapore.
 
 ---
 
 ## Deliverable 5 – TCO Calculation
 
-| Metric                | Epson Expression Home XP-2205  | Brother HL-L2400DW  |
-| --------------------- | ------------------------------ | ------------------- |
-| Total Pages (5 years) | 195,000 pages                  | 195,000 pages       |
-| Consumables Needed    | 1,300 cartridges               | 163 toners          |
-| Consumables Cost      | S$ 27,300                      | S$ 13,040           |
-| Paper Cost            | S$ 2,340                       | S$ 2,340            |
-| Electricity Cost      | S$ 37.44                       | S$ 134.16           |
-| Printer Cost          | S$ 69                          | S$ 149              |
-| TCO                   | S$ 29,746.44                   | S$ 15,663.16        |
+| Cloud Cost Item  | Type     | Unit Price | Units (months) | Total Cost |
+| ---------------- | -------- | ---------- | -------------- | ---------- |
+| Azure B2s VM     | Variable | 44.38      | 36.00          | 1,597.68   |
+| Storage          | Variable | 10.21      | 36.00          | 367.56     |
+| Public IP        | Variable | 2.00       | 36.00          | 72.00      |
+| Backup           | Variable | 5.00       | 36.00          | 180.00     |
+| Cloud 3-Year TCO |          |            |                | 2,217.24   |
 
-### Formulas Used
 
-Consumables Needed = Total Pages &divide; Yield
+| On-Prem Cost Item            | Type     | Unit Price | Units    | Total Cost |
+| ---------------------------- | -------- | ---------- | -------- | ---------- |
+| Dell Server                  | Fixed    | 2,800.00   | 1.00     | 2,800.00   |
+| Windows Server 2022 Standard | Fixed    | 1,173.00   | 1.00     | 1,173.00   |
+| UPS                          | Fixed    | 200.00     | 1.00     | 200.00     |
+| Electricity                  | Variable | 0.30       | 5,256.00 | 1,576.80   |
+| Maintenance                  | Variable | 150.00     | 3.00     | 450.00     |
+| On-Prem 3-Year TCO           |          |            |          | 6,199.80   |
 
-Consumables Cost = Consumables Needed x Cartridge/Toner Price
-
-Paper Cost = ( Total Pages &divide; Ream(500) ) x Paper Cost (per ream)
 
 ---
 
-## Deliverable 6 – Cost per Page
+## Deliverable 6 – Monthly and Yearly Cost Comparison
 
-| Printer            | Cost per Page |
-| ------------------ | ------------: |
-| Epson XP-2205      |     SGD 0.153 |
-| Brother HL-L2400DW |     SGD 0.080 |
+| Period      | Cloud Cost | On-Premises Cost |
+| ----------- | ---------- | ---------------- |
+| Monthly     | 61.59      | 172.22           |
+| Yearly      | 739.08     | 2,066.64         |
+| Three Years | 2,217.24   | 6,199.80         |
 
-### Formula Used
-
-Cost per Page = TCO &divide; Total Pages
-
-The Brother printer achieved a significantly lower cost per page because toner cartridges provide a much higher page yield.
+The cloud solution remained less expensive throughout the analysis period.
 
 ---
 
 ## Deliverable 7 – Break-even Analysis
 
-| Year | Epson Cumulative | Brother Cumulative |
-| ---- | ---------------- | ------------------ |
-| 1    | S$ 5949.29       | S$ 3282.63         |
-| 2    | S$ 11898.58      | S$ 6565.26         |
-| 3    | S$ 17847.86      | S$ 9847.9          |
-| 4    | S$ 23797.15      | S$ 13130.53        |
-| 5    | S$ 29746.44      | S$ 15663.16        |
+| Year   | Cloud Cumulative | On-Prem Cumulative |
+| ------ | ---------------- | ------------------ |
+| Year 1 | 739.08           | 2,066.64           |
+| Year 2 | 1,478.16         | 4,133.28           |
+| Year 3 | 2,217.24         | 6,199.92           |
 
-The Brother printer remained cheaper throughout the entire five-year period. Although it had a higher purchase price, the lower toner cost resulted in a significantly lower TCO. 
+### Break-even Analysis
 
-No break-even point occurred because the Brother printer remained more cost-effective across the full analysis period.
+No break-even point occurred during the three-year period because the cloud solution remained cheaper than the on-premises solution at every stage of the comparison.
 
 ---
 
 ## Deliverable 8 – Reflection Questions
 
-### Which printer has the lower TCO and why?
+### Which option has the lower TCO and why?
 
-The Brother HL-L2400DW has a lower TCO because its toner cartridges offer a significantly higher page yield, reducing long-term consumable costs.
+The Microsoft Azure B2s Virtual Machine has a lower Total Cost of Ownership because there is no requirement to purchase physical hardware, software licenses, or UPS equipment. Maintenance responsibilities are also transferred to the cloud provider.
 
-### Would the choice change for a home user printing only 5 pages per week?
+### Would the choice change for a larger organization?
 
-Yes. For low-volume home printing, the Epson XP-2205 may be more suitable due to its lower purchase price.
+Possibly. Large organizations with stable workloads may find that purchasing infrastructure becomes more economical over a much longer period. However, this depends on growth, hardware refresh cycles, and operational requirements.
 
-### What other factors could influence printer selection?
+### What other factors should be considered?
 
-Print quality, print speed, reliability, warranty support, availability of consumables, and brand reputation.
+- Scalability
+- Reliability
+- Security
+- Vendor support
+- Disaster recovery
+- Backup capabilities
+- Compliance requirements
 
-### What would be important for a large workgroup printer?
+### What is important for enterprise infrastructure?
 
-High toner yield, fast print speeds, low cost per page, reliability, and a high monthly duty cycle.
+- High availability
+- Redundancy
+- Security controls
+- Performance
+- Storage capacity
+- Disaster recovery planning
 
 ### What is the estimated break-even point?
 
-No break-even point was reached within the five-year analysis period.
+No break-even point occurred within the 3-year analysis period.
 
 ---
 
 ## Lab Summary
 
-This activity compared the Epson Expression Home XP-2205 inkjet printer and the Brother HL-L2400DW mono laser printer. Cost assumptions, consumable usage, electricity, paper, and printer purchase costs were calculated over a five-year period. The results showed that the Brother HL-L2400DW had a significantly lower Total Cost of Ownership due to its higher toner yield and lower long-term printing costs.
+The analysis showed that the cloud infrastructure provides greater flexibility and lower upfront costs, making it a cost-effective option for small and medium-sized organizations. Over the three years, the Microsoft Azure B2s Virtual Machine had a lower Total Cost of Ownership than the on-premises Dell PowerEdge T150 server.
 
