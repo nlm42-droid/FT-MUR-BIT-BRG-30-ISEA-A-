@@ -318,7 +318,8 @@ sudo find /home/shared -type f -exec chmod 750 {} \;
 sudo ls -l /home/shared
 ```
 
-Command that doesn't work ```bash
+Command that doesn't work 
+```bash
 sudo chmod 750 /home/shared/*
 ```
 
